@@ -6,6 +6,8 @@ from .views import plotGraph, temperature, humidity, picture, grow, setting
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('settingInfo', views.settingInfo, name='settingInfo'),
+    path('logInfo', views.logInfo, name='logInfo'),
     path('Log/temperature', temperature.as_view(), name='temperatureLog'),
     path('Log/humidity', humidity.as_view(), name='humidityLog'),
     path('Log/picture', picture.as_view(), name='pictureLog'),

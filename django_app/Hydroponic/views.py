@@ -25,6 +25,18 @@ def index(request):
         }
     return render(request, 'Hydroponic/index.html', params)
 
+def settingInfo(request):
+    params = {
+            'title': 'Hydroponic',
+        }
+    return render(request, 'Hydroponic/settingInfo.html', params)
+
+def logInfo(request):
+    params = {
+            'title': 'Hydroponic',
+        }
+    return render(request, 'Hydroponic/logInfo.html', params)
+
 def rebootCmd(request):
     os.system('/home/pi/reboot.sh &') # 再起動
 
